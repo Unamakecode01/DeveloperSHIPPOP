@@ -1,1 +1,2 @@
-# DeveloperSHIPPOP
+# DeveloperSHIPPOP by Phansakorn 
+Please install node
