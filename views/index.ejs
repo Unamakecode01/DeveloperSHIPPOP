@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset='utf-8'>
+  <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+
+  <title>Book Page</title>
+  <!-- <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <!-- <script src='main.js'></script> -->
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/style.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/Carousel.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/BookBestsale.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/Shopchart.scss">
+  
+  <!-- <link rel="stylesheet" type="text/css"   href="/stylesheets/animation.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/animation.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/bicon.min.css"> 
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/BookBestsale.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/fakeloader.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/fancybox.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/fotorama.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/lightbox.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/mainmenu.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/lightbox.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/material-design-iconic-font.min.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/nivo-preview-2.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/nivo-slider.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/pe-icon-7-stroke.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/slick.min.css">
+   <link rel="stylesheet" type="text/css"   href="/stylesheets/pe-icon-7-stroke.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/simple-line-icons.css">
+  <link rel="stylesheet" type="text/css"   href="/stylesheets/bootstrap.min.css"> -->
+ 
+</head>
+<body>
+  <!-- <h1>Hhhhhh</h1> -->
+  <%- include('layout.ejs') %> 
+
+<!-- +++++++++++ Carousel+++++++++++++++++ -->
+   <%- include('Carousel.ejs') %> 
+ <!-- +++++++++++ Carousel+++++++++++++++++ --> 
+   <div class="container">
+    <h4 style="text-align:left;">สินค้าขายดี
+      <span style="float:right;">
+        <h6 class="sa1">ดูสินค้าทั้งหมด</h6>
+    </span></h4>
+    <%- include('BookBestsale.ejs') %> 
+
+    <h4 style="text-align:left;">สินค้าแนะนำ
+      <span style="float:right;">
+        <h6 class="sa1">ดูสินค้าทั้งหมด</h6>
+    </span></h4>
+    <!-- <h6 class="sa1">ดูสินค้าทั้งหมด</h6> -->
+    <%- include('BookRecom.ejs') %> 
+    </div>
+
+    
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Book 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+</body>
+
+</html>
