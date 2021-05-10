@@ -1,90 +1,28 @@
-<nav>
-  <div class="container">
-    <div class="navbar-left">
-      <a href="#">Shopping Cart Demo</a>
-    </div> <!--end navbar-left -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <div class="navbar-right">
-      <a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">16</span></a>
-      <div class="shopping-cart">
-        <div class="shopping-cart-header">
-          <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">16</span>
-          <div class="shopping-cart-total">
-            <span class="lighter-text">Total:</span>
-            <span class="main-color-text total">$461.15</span>
-          </div>
-        </div> <!--end shopping-cart-header -->
-
-        <ul class="shopping-cart-items">
-          <li class="clearfix">
-            <img src="https://www.qispackaging.com.au/getmetafile/fefe4afb-dd4d-495e-ad59-209f29b47052/XMREDTREE.aspx" alt="item1" />
-            <span class="item-name">XMREDTREE</span>
-            <span class="item-detail">Pack 100</span>
-            <span class="item-price">$49.50</span>
-            <span class="item-quantity">Quantity: 01</span>
-          </li>
-
-          <li class="clearfix">
-            <img src="https://www.qispackaging.com.au/getmetafile/306f6d39-792f-4c8c-b101-9c6aef675758/XMWHREIN.aspx" alt="item1" />
-            <span class="item-name">XMWHREIN</span>
-            <span class="item-detail">Pack 100</span>
-            <span class="item-price">$34.06</span>
-            <span class="item-quantity">Quantity: 10</span>
-          </li>
-
-          <li class="clearfix">
-            <img src="https://www.qispackaging.com.au/getmetafile/b2f41988-a7b4-432c-b9c2-25bcb9afbcc3/XMJBRR.aspx" alt="item1" />
-            <span class="item-name">XMJBRR</span>
-            <span class="item-detail">Pack 25</span>
-            <span class="item-price">$14.21</span>
-            <span class="item-quantity">Quantity: 5</span>
-          </li>
-        </ul>
-
-        <a href="#" class="button">Checkout <i class="fa fa-chevron-right"></i></a>
-      </div> <!--end shopping-cart -->
-    </div> <!--end navbar-right -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Book</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
     
-  </div> <!--end container -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">สินค้าใหม่</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">สินค้าขายดี</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">สินค้าลดราคา</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">สินค้าแนะนำ</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-
-<div class="navbar"></div>
-
-
-<div class="container">
-  <a href="#" class="button" id="addtocart"> Add to cart</a>
-   
-</div>
-
-<script>
-  (function(){
- $(document).click(function() {
-    var $item = $(".shopping-cart");
-    if ($item.hasClass("active")) {
-      $item.removeClass("active");
-    }
-  });
-  
-  $('.shopping-cart').each(function() {
-    var delay = $(this).index() * 50 + 'ms';
-    $(this).css({
-        '-webkit-transition-delay': delay,
-        '-moz-transition-delay': delay,
-        '-o-transition-delay': delay,
-        'transition-delay': delay
-    });
-  });
-  $('#cart').click(function(e) {
-    e.stopPropagation();
-    $(".shopping-cart").toggleClass("active");
-  });
-  
-  $('#addtocart').click(function(e) {
-    e.stopPropagation();
-    $(".shopping-cart").toggleClass("active");
-  });
-
-
-  
-})();
-</script>
